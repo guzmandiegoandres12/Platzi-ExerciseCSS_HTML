@@ -1,10 +1,8 @@
 body{
     margin: 0;
-    background: linear-gradient( #39379E,#556071);
     font-family: 'Muli', sans-serif;
-    background-repeat: round;
-    background-size: contain;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 h2{
     color: azure;
@@ -61,8 +59,14 @@ h2{
 .header__menu__profile_image{
  width: 70px;
 }
+.main{
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 150);
+    background: linear-gradient( #39379E,#556071);
+}
 .buscador{
-    margin-top: 5%;
+    padding:8vh;
 }
 .buscador__container__h2{
     text-align: center;
@@ -92,10 +96,8 @@ h2{
     outline: 0px;
 }
 .carrusel{
-    margin-top: 50px;
-    position: relative;
-    width: 100%;
-    padding: 30px 0px;
+    margin:  50pX;
+    padding: 0;
 }
 .carrusel__container{
 margin: 0px 20px ;
@@ -159,6 +161,7 @@ white-space: nowrap;
 .contrls__image{
     width: 50px;
 }
+/*estilos para el scroll del carrusel */
 .scrollesp::-webkit-scrollbar {
     width: 6px;     /* Tamaño del scroll en vertical */
     height: 6px;    /* Tamaño del scroll en horizontal */
@@ -172,4 +175,53 @@ white-space: nowrap;
     background: #150578;
     border-radius: 3px;
 }
-
+/*estilos para el login*/
+.containerPanel{
+    margin:  0;
+    width: 100%;
+    height: calc(100vh - 150px);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient( #39379E,#556071); 
+}
+.containermanel__panel{
+    margin: 0;
+    min-width: 350px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: solid white 1px;
+    border-radius: 20px;
+    padding: 3vh 2vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.3) ;
+}
+.containermanel__panel h2{
+ text-align: center;
+}
+.formGrup{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.formGrup input {
+    margin: 5px 0;
+    border: solid 0;
+    background-color: rgba(255, 255, 255, 0) ;
+    border-bottom: seashell solid 2px;
+    font-size: 16px;
+    padding: 5px;
+    color: seashell;
+    text-align: center;
+}
+.formGrup input::placeholder{
+    color: seashell;
+    text-align: center;
+}
+.formGrup input:focus{
+ outline: none;
+}
+.footer{
+    height: 50px;
+}
